@@ -226,4 +226,4 @@ ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22')['response']
 ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22'')['response']
 
 {'success': True, 'response': 'AA:BB:CC:00:11:22 Deleted Successfully', 'error': ''}
-```# cisco-iseapi
+```#
