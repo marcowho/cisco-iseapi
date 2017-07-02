@@ -12,8 +12,6 @@ Need to add an ISE Administrator with the "ERS-Admin" or "ERS-Operator" group as
 
 #### Installation
 ```bash
-mkdir path/to/iseapi
-cd path/to/iseapi
 git clone https://github.com/marcowho/cisco-iseapi
 ```
 
