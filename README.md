@@ -1,6 +1,11 @@
 ### ISE
 Python module to manage Cisco ISE via the REST API
 
+Original source from: https://github.com/bobthebutcher/ise Thanks!
+- Added add_endpoint and delete_endpoint function in cream.py
+- Created sample script for bulk add endpoints, works with CSV file
+####
+
 #### Enable REST API
 http://www.cisco.com/c/en/us/td/docs/security/ise/2-0/api_ref_guide/api_ref_book/ise_api_ref_ers1.html#pgfId-1079790
 Need to add an ISE Administrator with the "ERS-Admin" or "ERS-Operator" group assignment is required to use the API.
@@ -207,4 +212,18 @@ ise.add_device(name='TEST_R1',
 ise.delete_device(device='TEST_R1')['response']
 
 {'response': 'TEST_R1 Deleted Successfully', 'error': '', 'success': True}
-``` # cisco-iseapi
+``` 
+
+#### Add endpoint
+```python
+ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22')['response']
+
+{'success': True, 'response': 'AA:BB:CC:00:11:22 Added Successfully', 'error': ''}
+``` 
+
+#### Delete endpoint
+```python
+ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22'')['response']
+
+{'success': True, 'response': 'AA:BB:CC:00:11:22 Deleted Successfully', 'error': ''}
+```# cisco-iseapi
