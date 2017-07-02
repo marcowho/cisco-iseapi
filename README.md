@@ -12,15 +12,15 @@ Need to add an ISE Administrator with the "ERS-Admin" or "ERS-Operator" group as
 
 #### Installation
 ```bash
-mkdir path/to/ise
-cd path/to/ise
-git clone https://github.com/bobthebutcher/ise.git
+mkdir path/to/iseapi
+cd path/to/iseapi
+git clone https://github.com/marcowho/cisco-iseapi
 ```
 
 #### Add to path
 ```python
 import sys
-sys.path.append('/path/to/ise/')
+sys.path.append('/path/to/iseapi/')
 ```
 
 #### Usage
