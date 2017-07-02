@@ -23,7 +23,6 @@ else:
 	for line in list_of_lines:
 		mac_address = line.split(",")[0]
 		group_id = line.split(",")[1]
-		print(mac_address)
-		print(group_id)
+		print(mac_address, group_id)
 		resp_add_endpoint = ise.add_endpoint(mac_address, group_id, profile_id = 'None')
 		print(resp_add_endpoint)

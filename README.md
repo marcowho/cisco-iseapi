@@ -18,7 +18,7 @@ git clone https://github.com/marcowho/cisco-iseapi
 #### Add to path
 ```python
 import sys
-sys.path.append('/path/to/iseapi/')
+sys.path.append('/path/to/cisco-iseapi/')
 ```
 
 #### Usage
