@@ -1,7 +1,7 @@
 ### ISE
 Python module to manage Cisco ISE via the REST API
 
-Original source from: https://github.com/bobthebutcher/ise Thanks!
+The original source from: https://github.com/bobthebutcher/ise Thanks!
 - Added add_endpoint and delete_endpoint function in cream.py
 - Created sample script for bulk add endpoints, works with CSV file
 ####
@@ -37,7 +37,7 @@ ise = ERS(ise_node='192.168.200.13', ers_user='user', ers_pass='pass', verify=Fa
 ```
 
 #### Testing
-Testing has been completed on ISE v2.0
+Testing has been completed on ISE v2.0 with python3
 
 #### Get a list of identity groups
 ```python
@@ -219,9 +219,18 @@ ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22')['response']
 {'success': True, 'response': 'AA:BB:CC:00:11:22 Added Successfully', 'error': ''}
 ``` 
 
+##### sample script 
+```bash
+python3 add_endpoint.py AA:BB:CC:00:11:22 10a42820-6d90-11e5-978e-005056bf2f0a
+``` 
+##### -g for finding out the group id
+```bash
+python3 add_endpoint.py -g
+``` 
+
 #### Delete endpoint
 ```python
 ise.delete_endpoint(mac_address='AA:BB:CC:00:11:22'')['response']
 
 {'success': True, 'response': 'AA:BB:CC:00:11:22 Deleted Successfully', 'error': ''}
-```#
+```
