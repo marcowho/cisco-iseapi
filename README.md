@@ -214,7 +214,7 @@ ise.delete_device(device='TEST_R1')['response']
 
 #### Add endpoint
 ```python
-ise.add_endpoint(mac_address='AA:BB:CC:00:11:22')['response']
+ise.add_endpoint(mac_address='AA:BB:CC:00:11:22', group_id = '10a42820-6d90-11e5-978e-005056bf2f0a', profile_id = 'None')
 
 {'success': True, 'response': 'AA:BB:CC:00:11:22 Added Successfully', 'error': ''}
 ``` 
