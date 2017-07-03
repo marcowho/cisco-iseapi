@@ -1,4 +1,4 @@
-### ISE
+### Cisco ISE API
 Python module to manage Cisco ISE via the REST API
 
 The original source from: https://github.com/bobthebutcher/ise Thanks!
