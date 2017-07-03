@@ -23,7 +23,7 @@ sys.path.append('/path/to/cisco-iseapi/')
 
 #### Usage
 ```python
-from ise.cream import ERS
+from cream import ERS
 ise = ERS(ise_node='192.168.200.13', ers_user='user', ers_pass='pass', verify=False, disable_warnings=True)
 ```
 
